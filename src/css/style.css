@@ -37,9 +37,6 @@ body{
     justify-content: space-between;
 }
 
-.socila-media-block{
-    
-}
 
 .main{
     width: 100%;
@@ -128,27 +125,7 @@ body{
     margin-block-end: 0.3em;
 }
 
-.more-button{
-    color: white;
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-    text-decoration: none;
-    position: relative;
-}
 
-.more-button::after{
-    position: absolute;
-        height: 1px;
-        margin: 0 auto;
-        content: '';
-        left: 0;
-        right: 0;
-        width: 90%;
-        color: #000;
-        background-color: rgb(255, 255, 255);
-        left: 0;
-        bottom: -0.3em;
-}
 
 .main-text-block{
     height: 70%;
@@ -218,6 +195,10 @@ body{
     align-items: center;
 }
 
+.main-logo{
+    flex: 1;
+}
+
 @media (max-width: 1200px) {
 .main-text-block {
         height: 90%;
@@ -245,10 +226,81 @@ body{
             margin-block-end: 0.2em;
         }
 
-        .logo-menu-block{
-            flex: 1;
-            
+        .main-logo {
+            flex: 0;
+        }
+        .bar-block{
+            justify-content: space-between;
         }
 }
 
 
+ /* .more-button {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    text-decoration: none;
+    position: relative;
+} */
+
+
+.more-button {
+    color: #FFF;
+    transition: all 0.5s;
+    position: relative;
+    letter-spacing: 0.2em;
+    text-decoration: none;
+}
+
+.more-button::before {
+    position: absolute;
+    height: 1px;
+    margin: 0 auto;
+    content: '';
+    left: 0;
+    right: 0;
+    width: 90%;
+    color: #000;
+    background-color: #FFF;
+    left: 0;
+    bottom: -0.3em;
+    transition: all 0.3s;
+}
+ 
+/* .more-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s;
+} */
+
+.more-button:hover::before {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+}
+
+.more-button::after {
+    content: '';
+    position: absolute;
+    top: -20%;
+    left: -30%;
+    width: 160%;
+    height: 140%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    transform: scale(1.2, 1.2);
+
+    margin: auto;
+}
+
+.more-button:hover::after {
+    opacity: 1;
+    transform: scale(1, 1);
+}   
