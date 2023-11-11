@@ -1,0 +1,254 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #494399;
+    color: white;
+    font-family: system-ui;
+    
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-content{
+    max-width: 67vw;
+}
+
+.bar-block{
+    display: flex;
+
+}
+
+.logo-menu-block{
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.socila-media-block{
+    
+}
+
+.main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2.3fr 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 0 4vmin;
+    margin: 0 3%;
+}
+
+.illustration-block{
+    position: relative;
+    display: inline-block;
+        
+}
+
+.illustration-block:after{
+    content: '';
+    position: absolute;
+    left: 20%;
+    top: 0;
+    /* border: 2px solid black; */
+    background-color: rgb(28, 139, 139);
+    width: 48%;
+    height: 100%;
+    z-index: -1;
+}
+
+.main-foto-title-block{
+  margin:  10% 0 23% 0;
+}
+
+.main-foto-title{
+    font-size: 3.6em;
+    margin-block-end: 0.2em;
+}
+
+.img{
+    width: 100%;
+    aspect-ratio: 1.8 / 1;
+    object-fit: cover;
+}
+
+.header{
+    width: 100%;
+    margin: 2% 0;
+}
+
+
+.strategy-number,
+.goal-number {
+    grid-area: number;
+}
+
+.strategy-title,
+.goal-title {
+    grid-area: title;
+}
+
+.strategy-text,
+.goal-text {
+    grid-area: main-text;
+}
+
+.strategy-more,
+.goal-more {
+    grid-area: more-button;
+}
+
+.strategy-block,
+.goal-block{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+                " number title"
+                " empty main-text"
+                " empty more-button";
+}
+
+.sub-title{
+    letter-spacing: 0.1em;
+    opacity: 0.55;
+    font-size: 1.2em;
+    margin-block-start: 0.3em;
+    margin-block-end: 0.3em;
+}
+
+.more-button{
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    text-decoration: none;
+    position: relative;
+}
+
+.more-button::after{
+    position: absolute;
+        height: 1px;
+        margin: 0 auto;
+        content: '';
+        left: 0;
+        right: 0;
+        width: 90%;
+        color: #000;
+        background-color: rgb(255, 255, 255);
+        left: 0;
+        bottom: -0.3em;
+}
+
+.main-text-block{
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ordinary-text{
+    font-size: 0.9em;
+}
+
+.text-block{
+    height: 100%;
+    display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+}
+
+.footer{
+    display: flex;
+    min-height: 10vh;
+    background-color: rgb(52, 48, 48);
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-text-block{
+    margin: 4vmin;
+    text-align: center;
+    max-width: 30vw;
+}
+
+.center{
+    text-align: center;
+}
+
+.fa-logo{
+    font-size: 3vmin;
+}
+
+.logo-menu-block .fa-logo {
+    margin-right: 3vmin;
+}
+
+.socila-media-block .fa-logo{
+    margin-left: 1vmin;
+    
+}
+
+.socila-media-block a {
+    margin-left: 1vmin;
+    text-decoration: none;
+}
+
+.socila-media-block{
+    display: flex;
+    flex-direction: row;
+}
+
+.instagram-icon,
+.twitter-icon,
+.facebook-icon,
+.menu-button,
+.main-logo{
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 1200px) {
+.main-text-block {
+        height: 90%;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 1000px) {
+    .main {
+            width: 100%;
+            display: flex;
+            row-gap: 8vmin;
+            flex-direction: column;
+            margin: 3%;
+            margin-bottom: 12vmin;
+        }
+        .main-text-block {
+            row-gap: 8vmin;
+        }
+        .ordinary-text {
+            font-size: 0.9em;
+        }
+        .main-foto-title {
+            font-size: 7vmin;
+            margin-block-end: 0.2em;
+        }
+
+        .logo-menu-block{
+            flex: 1;
+            
+        }
+}
+
+
