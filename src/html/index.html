@@ -17,23 +17,47 @@
             <div class="bar-block">
                 
                 <div class="main-logo">
-                    <i class="fa-regular fa-eye fa-logo center"  ></i>
+                    <i class="fa-regular fa-eye fa-logo "  ></i>
                 </div>
     
-                <div class="menu-button">
-                    <i class="fa-solid fa-bars fa-logo center" ></i>
+                <div class="menu-button" onclick=showSidebar()>
+                    <i class="fa-solid fa-bars fa-logo " ></i>
                 </div>
                 
-                <div class="socila-media-block">
-                    <a href="" class="facebook-icon ">
-                        <i class="fa-brands fa-facebook fa-logo center" style="color: #ffffff;"></i>
-                    </a>
-                    <a href="" class="twitter-icon ">
-                        <i class="fa-brands fa-twitter fa-logo center" style="color: #ffffff;"></i>
-                    </a>
-                    <a href="" class="instagram-icon ">
-                        <i class="fa-brands fa-instagram fa-logo center" style="color: #ffffff;"></i>
-                    </a>
+                <div class="">
+                    <div class='grow-container'>
+                        <a href="" class=" circle-button to-facebook">
+                            <i class="fa fa-facebook fa-fw " style="color: #ffffff;" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div class='grow-container'>
+                        <a href="" class=" circle-button to-twitter">
+                            <i class="fa fa-twitter fa-fw" style="color: #ffffff;" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div class='grow-container'>
+                        <a href="" class=" circle-button to-instagram">
+                            <i class="fa fa-instagram  fa-fw " style="color: #ffffff;" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                
+                </div>
+                
+                
+                <div class="sidebar" >
+                    <div class="close-sidebar">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40" onclick=hideSidebar()>
+                        <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg>
+                    </div>
+                    
+                    <div class="sidebar-content">
+                        <div class="main-page"><p>Головна</p></div>
+                        <div class="statistic-page"><p>Статистика</p></div>
+                        <div class="sponsors-page"><p>Спонсори</p></div>
+                        <div class="about-page"><p>Про нас</p></div>
+                    </div>
+                
                 </div>
             </div>
         </header>
@@ -41,9 +65,16 @@
         <main class="main">
             <div class="illustration-block">
                 <div class="main-foto-title-block">
-                    <h1 class="main-foto-title">
+                    <!-- <h1 class="main-foto-title">
                         Data Visualization
-                    </h1>
+                    </h1> -->
+                    <div class="main-foto-title">
+                        
+                            <p>Data <a href="#" id="style-2" data-replace="Visualization"><span>Visualization</span></a></p>
+                        
+                        
+                    </div >
+                    
                     <div class="rectangle"></div>
                     <img class = "img" src="../../img/main-foto.jpg" alt="">
                 </div>
@@ -112,10 +143,10 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, ab! Nobis dolore delectus consequuntur.
         </div>
     </footer>
-    
+
 </body>
 
-
+<script src="../js/main.js"></script>
 
 
 </html>
